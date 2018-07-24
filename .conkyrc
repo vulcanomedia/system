@@ -168,7 +168,7 @@ conky.text = [[
 S Y S T E M    I N F O
 ${hr}
 Uptime:${alignr}${uptime}
-Battery:${alignr} ${battery_percent BAT0}% ${if_match ${battery_percent BAT0} < 30}${color9} ${battery_bar 8,70  BAT0} ${color} ${else} ${if_match ${battery_percent BAT0} < 50}${color8} ${battery_bar 8,70  BAT0} ${color} ${else} ${color7} ${battery_bar 8,70  BAT0} ${color} ${endif}${endif}
+Battery:${alignr}${battery_time BAT0}${if_match ${battery_percent BAT0} < 30}${color9} ${battery_bar 12,30  BAT0} ${color} ${else} ${if_match ${battery_percent BAT0} < 50}${color8} ${battery_bar 12,30  BAT0} ${color} ${else} ${color7} ${battery_bar 12,30  BAT0} ${color} ${endif}${endif}
 #${hr}
 CPU Average:${alignr}${cpu cpu0}%
 RAM:$alignr${mem} / ${memmax}
